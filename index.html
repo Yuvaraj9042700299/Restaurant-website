@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Delicious Eats</title>
+</head>
+<style> 
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#viewMenu {
+    margin-top: 20px;
+}
+
+.menu-item {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Delicious Eats</h1>
+            <p>Experience the finest dining in town</p>
+            <button id="viewMenu">View Menu</button>
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <h3>Appetizers</h3>
+                <ul>
+                    <li>Bruschetta</li>
+                    <li>Calamari</li>
+                    <li>Caprese Salad</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3>Main Courses</h3>
+                <ul>
+                    <li>Steak</li>
+                    <li>Pasta Carbonara</li>
+                    <li>Salmon</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Delicious Eats</p>
+    </footer>
+    <script src="script.js">
+        // Add interactivity with JavaScript here
+document.getElementById("viewMenu").addEventListener("click", function () {
+    document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+});
+
+    </script>
+</body>
+</html>
